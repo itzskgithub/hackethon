@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVeda - Articles</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-left: 270px; /* Offset to accommodate sidebar */
+      padding: 20px;
+      width: calc(100% - 270px); /* Full width minus sidebar */
+      background-color: #f4f4f4;
+      min-height: 100vh;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Article styling */
+    .content-article {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start with a downward offset */
+      transition: all 0.3s ease-out; /* Smooth animation */
+    }
+
+    .content-article.show {
+      opacity: 1; /* Become visible */
+      transform: translateY(0); /* Move to original position */
+    }
+
+    .content-article img {
+      float: left;
+      margin-right: 20px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50px); /* Start with a leftward offset */
+      transition: all 0.7s ease-out 0.2s; /* Delay image animation */
+    }
+
+    .content-article.show img {
+      opacity: 1; /* Become visible */
+      transform: translateX(0); /* Move to original position */
+    }
+
+    .content-article h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .content-article h3 {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+
+    .content-article h5 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .content-article p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .clear {
+      clear: both; /* Ensures proper flow of content after floated elements */
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 15px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>AquaVeda</h2>
+    <a href="contentarea1.html">Water Management</a>
+    <a href="contentarea2.html">Saving Techniques</a>
+    <a href="contentarea3.html">Water in Agriculture</a>
+    <a href="contentarea4.html">Water in Industry</a>
+    <a href="contentarea5.html">Awareness Campaigns</a>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <h1>Water Conservation Articles</h1>
+    <div id="agriculture" class="content-article">
+      <img src="img3.jpg" alt="Water in Agriculture">
+      <h2>Water in Agriculture</h2>
+      <h3>Key Role and Conservation Techniques</h3>
+      <p>Water is essential for agriculture, as it is the primary resource used to grow crops and sustain livestock...</p>
+      <!-- Additional content -->
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <p>We provide innovative solutions for water management and conservation.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: info@aquaveda.com</li>
+          <li>Phone: +91 8540918939</li>
+          <li>Bidhannagar, Durgapur, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Aquaveda.com | All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // JavaScript for Scroll Animation
+    const articles = document.querySelectorAll('.content-article');
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Stop observing once animation is triggered
+        }
+      });
+    }, { threshold: 0.2 });
+
+    articles.forEach(article => {
+      observer.observe(article);
+    });
+  </script>
+</body>
+</html>
