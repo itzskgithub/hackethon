@@ -1,0 +1,72 @@
+p{
+    text-align: center;
+}
+.content {
+    max-width: 800px; /* Limits the width of the paragraph */
+    margin: 90px auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds some space around the content */
+    text-align: justify; /* Optionally, justifies text for cleaner alignment */
+    background-color: #f9f9f9; /* Optional: Add a background for emphasis */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    z-index: 2;
+}
+.img{
+    margin: 90px auto;
+}
+.content h2{
+    text-align: center;
+}
+.content2{
+    max-width: 800px; /* Limits the width of the paragraph */
+    margin: 90px auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds some space around the content */
+    text-align: justify; /* Optionally, justifies text for cleaner alignment */
+    background-color: #f9f9f9; /* Optional: Add a background for emphasis */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    z-index: 2;
+    background-color: rgb(241, 241, 233);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content2 h2{
+    text-align: center;
+}
+
+
+/*for latest*/
+.mainhead{
+    text-align: center;
+}
+.box{
+    max-width: 500px;
+    background-color: bisque;
+    border-radius: 8px;
+}
+.image{
+    margin-left: 8rem;
+}
+.latest {
+    display: flex;
+    align-items: center; /* Aligns items vertically at the same level */
+  }
+  .latest img {
+    max-width: 350px; /* Adjust the size of the image as needed */
+    margin-right: 20px; /* Add some space between the image and the text */
+  }
+  .latest p {
+    font-size: 20px;
+    max-width: 650px;
+    text-align: left;
+  }
+  .text{
+    text-align: start;
+    max-width: 800px;
+    font-size: 22px;
+  }
+  h4{
+    font-size: 25px;
+  }
+  

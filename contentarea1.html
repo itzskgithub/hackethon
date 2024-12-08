@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVeda - Articles</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #7291af;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-left: 270px; /* Offset to accommodate sidebar */
+      padding: 20px;
+      width: calc(100% - 270px); /* Full width minus sidebar */
+      background-color: #f4f4f4;
+      min-height: 100vh;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Article styling */
+    .content-article {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start with a downward offset */
+      transition: all 0.8s ease-out; /* Smooth animation */
+    }
+
+    .content-article.show {
+      opacity: 1; /* Become visible */
+      transform: translateY(0); /* Move to original position */
+    }
+
+    .content-article img {
+      float: left;
+      margin-right: 20px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50px); /* Start with a leftward offset */
+      transition: all 0.8s ease-out 0.2s; /* Delay image animation */
+    }
+
+    .content-article.show img {
+      opacity: 1; /* Become visible */
+      transform: translateX(0); /* Move to original position */
+    }
+
+    .content-article h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .content-article p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .clear {
+      clear: both; /* Ensures proper flow of content after floated elements */
+    }
+  </style>
+  <link rel="stylesheet" href="contentarea1.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img8.png" height="50px" width="200px">
+    <a href="contentarea1.html">Water Management</a>
+    <a href="contentarea2.html">Saving Techniques</a>
+    <a href="contentarea3.html">Water in Agriculture</a>
+    <a href="contentarea4.html">Water in Industry</a>
+    <a href="contentarea5.html">Awareness Campaigns</a>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <h1>Water Conservation Articles</h1>
+
+    <!-- Article 1 -->
+    <div id="management" class="content-article">
+      <img src="img1.png" alt="Water Management">
+      <h2>Water Management</h2>
+      <p>
+        <h3>Article: The Importance of Water Management</h3>
+        <p> is one of the most essential resources on Earth, sustaining life and supporting ecosystems. However, with increasing population, industrialization, and climate change, water resources are under immense pressure. Effective water management is the key to ensuring a sustainable future for all.</p><br>
+
+        <h3>What is Water Management?</h3>
+        <p>Water management is the process of planning, distributing, and optimizing water resources to meet the needs of the environment, society, and economy.</p> <p>It includes activities such as:</p>
+
+        <p>Ensuring clean drinking water for communities.</p>
+        <p>Managing wastewater to prevent pollution.</p>
+        <p>Allocating water for agriculture and industries.</p>
+       <p>Protecting water bodies and aquatic ecosystems.</p><br>
+        <h3>Why Is Water Management Important?</h3>
+        <h5>Combatting Water Scarcity</h5>
+        <p>Over 2 billion people worldwide face water scarcity.</p> <p>Proper management ensures equitable distribution and reduces wastage.</p>
+
+        <h5>Supporting Agriculture</h5>
+        <p>Agriculture consumes about 70% of the world's freshwater.</p> <p>Techniques like drip irrigation and rainwater harvesting can improve efficiency and conserve water.</p>
+
+        <h5>Preventing Pollution</h5>
+        <p>Untreated wastewater and industrial runoff pollute rivers and oceans. </p><p>Effective water treatment systems are critical to maintaining clean water supplies.</p>
+
+        <h5>Mitigating Climate Change</h5>
+        <p>Changing rainfall patterns and extreme weather events threaten water availability.</p><p> Water management helps build resilience to these challenges.</p>
+
+        <h5>Preserving Ecosystems</h5>
+        <p>Rivers, lakes, and wetlands are home to countless species. </p><p>Sustainable practices ensure their survival alongside human needs.</p>
+
+        <h3>Techniques for Effective Water Management:</h3>
+        <h5>Rainwater Harvesting</h5>
+        Collecting and storing rainwater for later use reduces dependency on traditional water sources.
+
+        <h5>Recycling and Reuse</h5>
+        Treating wastewater for reuse in irrigation, industry, or even household purposes minimizes wastage.
+
+        <h5>Efficient Irrigation</h5>
+        Drip and sprinkler irrigation deliver water directly to plant roots, reducing water loss through evaporation or runoff.
+
+        <h5>Public Awareness Campaigns</h5>
+        Educating communities about the importance of water conservation fosters responsible usage.
+
+        <h5>Smart Water Systems</h5>
+        Technologies like IoT sensors and AI help monitor and optimize water usage in real-time.
+
+        <h3>The Role of Individuals in Water Management:</h3>
+        <p>Fix leaking taps and pipes to save water.</p>
+        <p>Use water-efficient appliances like low-flow showerheads and toilets.</p>
+        <p>Practice rainwater harvesting at home.</p>
+        <p> Avoid disposing of harmful chemicals or waste in water bodies.</p>
+        <p>Participate in community cleanup drives for local rivers and lakes.</p>
+      </p>
+      <div class="clear"></div>
+    </div>
+  <footer>
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <p>We are committed to providing innovative solutions for water management and conservation. Join us in making a difference!</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: info@aquaveda.com</li>
+          <li>Phone: +91 8540918939</li>
+          <li>BENGAL COLLEGE OF ENGINEERING AND TECHNOLOGY
+            BIDHANNAGAR, DURGAPUR-713212
+            PASCHIM BARDHAMAN- WEST BENGAL , INDIA
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2024 Aquaveda.com | All Rights Reserved
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for Scroll Animation
+    const articles = document.querySelectorAll('.content-article');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Stop observing once animation is triggered
+        }
+      });
+    }, {
+      threshold: 0.2 // Trigger animation when 20% of the element is visible
+    });
+
+    articles.forEach(article => {
+      observer.observe(article);
+    });
+  </script>
+</body>
+</html>
+
