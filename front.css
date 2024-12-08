@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Example</title>
+  <style>
+    /* Resetting margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Full-page background image */
+    .background {
+      background-image: url('background-image.jpg'); /* Replace with your image URL */
+      background-size: cover; /* Ensures the image covers the entire screen */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents tiling */
+      height: 100%; /* Makes the background take up the full viewport height */
+      display: flex;
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      color: white; /* Text color to contrast with the background */
+      text-align: center; /* Center-aligns text */
+    }
+
+    /* Content container */
+    .content {
+      max-width: 800px; /* Restricts content width */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+      padding: 20px; /* Adds space around the content */
+      border-radius: 10px; /* Optional: Rounded corners for the container */
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="content">
+      <h1>Welcome to AquaVeda</h1>
+      <p>
+        AquaVeda is committed to water conservation and management. Learn how we can help you adopt sustainable practices to preserve our planet's most precious resource. Together, let's create a future where water scarcity is no longer a concern.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

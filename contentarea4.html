@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVeda - Articles</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #7291af;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-left: 270px; /* Offset to accommodate sidebar */
+      padding: 20px;
+      width: calc(100% - 270px); /* Full width minus sidebar */
+      background-color: #f4f4f4;
+      min-height: 100vh;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Article styling */
+    .content-article {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start with a downward offset */
+      transition: all 0.8s ease-out; /* Smooth animation */
+    }
+
+    .content-article.show {
+      opacity: 1; /* Become visible */
+      transform: translateY(0); /* Move to original position */
+    }
+
+    .content-article img {
+      float: left;
+      margin-right: 20px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50px); /* Start with a leftward offset */
+      transition: all 0.8s ease-out 0.2s; /* Delay image animation */
+    }
+
+    .content-article.show img {
+      opacity: 1; /* Become visible */
+      transform: translateX(0); /* Move to original position */
+    }
+
+    .content-article h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .content-article p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .clear {
+      clear: both; /* Ensures proper flow of content after floated elements */
+    }
+  </style>
+  <link rel="stylesheet" href="contentarea1.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img8.png" height="50px" width="200px">
+    <a href="contentarea1.html">Water Management</a>
+    <a href="contentarea2.html">Saving Techniques</a>
+    <a href="contentarea3.html">Water in Agriculture</a>
+    <a href="contentarea4.html">Water in Industry</a>
+    <a href="contentarea5.html">Awareness Campaigns</a>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <h1>Water Conservation Articles</h1>
+    <!-- Article 4 -->
+    <div id="industry" class="content-article">
+        <img src="img4.png" alt="Water in Industry">
+        <h2>Water in Industry</h2>
+        <p>
+          Water plays a crucial role in industrial processes and is a vital resource for manufacturing, production, and various other industrial activities.</p>
+          <p>Here's an overview of its importance and use in industries:</p>
+
+          <h3>Importance of Water in Industry</h3>
+          <h5>Processing and Manufacturing:</h5>
+          
+          <p>Used as a raw material in chemical, food, beverage, and pharmaceutical industries.</p>
+          <p>Integral in producing products like paper, textiles, and steel.</p>
+          <h5>Cooling and Heating:</h5>
+          
+          <p>Cooling water systems are essential in power plants, refineries, and manufacturing facilities.</p>
+          <p>Used in boilers to generate steam for power generation and other processes.</p>
+          <h5>Cleaning and Sanitation:</h5>
+          
+          <p>Ensures hygiene in industries such as food processing and healthcare.</p>
+          <p>Cleans equipment and machinery to maintain operational efficiency.</p>
+          <h5>Transportation and Mixing:</h5>
+          
+          <p>Acts as a medium for transporting chemicals and other materials in pipelines.</p>
+          <p>Used to dissolve or dilute substances in manufacturing processes.</p>
+          <h5>Energy Production:</h5>
+          
+          <p>Key to hydropower generation.</p>
+          <p>Plays a significant role in thermal and nuclear power plants.</p>
+          <h3>Challenges of Water Use in Industry</h3>
+          <h5>Scarcity and Competition:</h5>
+          
+          <p>Limited water availability can lead to competition between industrial and other sectors.</p>
+          <h5>Water Quality Requirements:</h5>
+          
+          <p>Industries often require specific water quality, necessitating purification and treatment.</p>
+          <h5>Wastewater Management:</h5>
+          
+          <p>Industrial processes generate wastewater containing pollutants that need treatment before discharge.</p>
+          <h5>Sustainability Pressures:</h5>
+          
+          <p>Increasing focus on minimizing water usage and reducing the environmental impact of water withdrawal.</p>
+          <p>Solutions for Sustainable Water Management in Industry</p>
+          <h5>Recycling and Reuse:</h5>
+          
+          <p>Implementing water recycling systems to reduce freshwater dependency.</p>
+          <h5>Efficient Technology:</h5>
+          
+          <p>Adopting advanced cooling systems, low-water cleaning technologies, and energy-efficient boilers.</p>
+          <h5>Wastewater Treatment:</h5>
+          
+          <p>Setting up treatment plants to recycle wastewater for industrial or agricultural use.</p>
+          <h5>Rainwater Harvesting:</h5>
+          
+          <p>Capturing rainwater to supplement industrial water requirements.</p>
+          <h5>Policy Compliance and Monitoring:</h5>
+          
+          <p>Adhering to water usage regulations and employing sensors to monitor consumption.</p>
+          <img src="img5.jpeg" height="250px" width="450px">
+          <h3>Examples of Water-Intensive Industries</h3>
+          <h5>>Energy Production:</h5><p> Power plants for steam generation and cooling.
+          Food and Beverage: High water demand for processing and cleaning.</p>
+          <h5>Chemical Industry:</h5><p> Utilizes water for reactions, dilutions, and cooling.</p>
+          <h5>Mining and Metal Industries:</h5><p> Requires water for ore processing and dust suppression.</p>
+          <h3>Role of Innovation</h3>
+          <p>Smart water systems, IoT, and AI are being deployed to monitor and optimize water usage.</p>
+          <p>Research into alternative cooling methods and zero-liquid discharge systems is gaining traction</p>
+    
+        <div class="clear"></div>
+      </div>
+<footer>
+    <div class="footer-container">
+          <!-- About Section -->
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We are committed to providing innovative solutions for water management and conservation. Join us in making a difference!</p>
+          </div>
+    
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Email: info@aquaveda.com</li>
+              <li>Phone: +91 8540918939</li>
+              <li>BENGAL COLLEGE OF ENGINEERING AND TECHNOLOGY
+                BIDHANNAGAR, DURGAPUR-713212
+                PASCHIM BARDHAMAN- WEST BENGAL , INDIA
+                </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          &copy; 2024 Aquaveda.com | All Rights Reserved
+        </div>
+      </footer>
+    
+      <script>
+        // JavaScript for Scroll Animation
+        const articles = document.querySelectorAll('.content-article');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once animation is triggered
+            }
+          });
+        }, {
+          threshold: 0.2 // Trigger animation when 20% of the element is visible
+        });
+    
+        articles.forEach(article => {
+          observer.observe(article);
+        });
+      </script>
+    </body>
+    </html>

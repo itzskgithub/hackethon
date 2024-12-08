@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVeda - Articles</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #7291af;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-left: 270px; /* Offset to accommodate sidebar */
+      padding: 20px;
+      width: calc(100% - 270px); /* Full width minus sidebar */
+      background-color: #f4f4f4;
+      min-height: 100vh;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Article styling */
+    .content-article {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start with a downward offset */
+      transition: all 0.2s ease-out; /* Smooth animation */
+    }
+
+    .content-article.show {
+      opacity: 1; /* Become visible */
+      transform: translateY(0); /* Move to original position */
+    }
+
+    .content-article img {
+      float: left;
+      margin-right: 20px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50px); /* Start with a leftward offset */
+      transition: all 0.2s ease-out 0.2s; /* Delay image animation */
+    }
+
+    .content-article.show img {
+      opacity: 1; /* Become visible */
+      transform: translateX(0); /* Move to original position */
+    }
+
+    .content-article h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .content-article p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .clear {
+      clear: both; /* Ensures proper flow of content after floated elements */
+    }
+  </style>
+  <link rel="stylesheet" href="contentarea1.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img8.png" height="50px" width="200px">
+    <a href="contentarea1.html">Water Management</a>
+    <a href="contentarea2.html">Saving Techniques</a>
+    <a href="contentarea3.html">Water in Agriculture</a>
+    <a href="contentarea4.html">Water in Industry</a>
+    <a href="contentarea5.html">Awareness Campaigns</a>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <h1>Water Conservation Articles</h1>
+    <!-- Article 5 -->
+    <div id="awareness" class="content-article">
+        <img src="img6.png" alt="Awareness Campaigns">
+        <h2>Awareness Campaigns</h2>
+        <p>
+          Awareness campaigns play a critical role in promoting water conservation and sustainable management, particularly for industries and communities. Here’s a guide to organizing and understanding effective campaigns on water awareness:
+
+          <h3>Objectives of Water Awareness Campaigns</h3>
+          <h5>Educate:</h5>
+
+          <p>Highlight the importance of water in daily life, industries, and ecosystems.</p>
+          <p>Address issues like scarcity, pollution, and sustainable usage.</p>
+          <h5>Engage:</h5>
+
+          <p>Foster community participation in water conservation efforts.</p>
+          <p>Encourage industries to adopt sustainable water practices.</p>
+          <h5>Empower:</h5>
+
+          <p>Provide actionable steps individuals and businesses can take to reduce water waste.</p>
+          <p>Advocate for policy changes to ensure sustainable water management.</p>
+          <h3>Key Focus Areas for Campaigns</h3>
+          <h5>Industrial Water Use:</h5>
+
+          <p>Efficient use and reuse of water in industries.</p>
+          <p>Implementing wastewater treatment and recycling systems.</p>
+          <h5>Community Conservation:</h5>
+
+          <p>Promoting responsible water use in households and public spaces.</p>
+          <p>Encouraging rainwater harvesting and greywater reuse.</p>
+          <h5>Environmental Impact:</h5>
+
+          <p>Raising awareness about the consequences of water pollution.</p>
+          <p>Protecting natural water bodies and aquatic ecosystems.</p>
+          <h5>Policy Advocacy:</h5>
+
+          <p>Supporting laws and regulations that promote water conservation.</p>
+          <p>Encouraging industries to comply with environmental standards.</p>
+          <h3>Strategies for an Effective Campaign</h3>
+          <h5>Digital Media:</h5>
+
+          <p>Use social media platforms to reach a wide audience with infographics, videos, and articles.</p>
+          <p>Launch hashtags and challenges (e.g., #SaveWaterToday).</p>
+          <h5>Workshops and Seminars:</h5>
+
+          <p>Host events for industries and communities to discuss water management solutions.</p>
+          <p>Collaborate with experts to deliver impactful talks.</p>
+          <h5>Collaborations:</h5>
+
+          <p>Partner with local governments, NGOs, and businesses.</p>
+          <p>Engage schools and universities in water conservation activities.</p>
+          <h5>Storytelling and Testimonials:</h5>
+
+          <p>Share success stories of industries and individuals implementing sustainable practices.</p>
+          <p>Create videos showcasing the effects of water scarcity or pollution.</p>
+          <h5>Visual Campaigns:</h5>
+
+          <p>Develop posters, murals, or advertisements promoting water conservation messages.</p>
+          <p>Use data visualization to show the impact of current water usage trends.</p>
+          <h3>Examples of Campaign Ideas</h3>
+          <h5>"Drop by Drop":</h5>
+
+          <p>Focus on small, everyday actions that collectively conserve water.</p>
+          <p>Promote water-saving tips for industries and homes.</p>
+          <h5>"Blue Future":</h5>
+
+          <p>Highlight the role of water in securing future livelihoods and ecosystems.</p>
+          <p>Target industrial leaders to pledge sustainable practices.</p>
+          <h5>"Every Drop Counts":</h5>
+
+          <p>Showcase statistics on water wastage and simple ways to reduce it.</p>
+          <p>Engage through online calculators to measure water footprints.</p>
+          <h5>World Water Day Initiatives:</h5>
+
+          <p>Organize events on March 22 to align with global efforts for water conservation.</p>
+          <p>Use the UN’s yearly theme to inspire local campaigns.</p>
+          <h3>Metrics to Evaluate Campaign Impact</h3>
+          <h5>Engagement:</h5><p> Social media reach, likes, shares, and comments.</p>
+          <h5>Participation:</h5><p> Attendance at events and workshops.</p>
+          <h5>Adoption:</h5><p> Increase in industries adopting water-efficient technologies.</p>
+          <h5>Feedback:</h5><p> Surveys to measure change in attitudes and behaviors.</p>
+        </p>
+        <div class="clear"></div>
+    </div>
+<footer>
+    <div class="footer-container">
+          <!-- About Section -->
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We are committed to providing innovative solutions for water management and conservation. Join us in making a difference!</p>
+          </div>
+    
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Email: info@aquaveda.com</li>
+              <li>Phone: +91 8540918939</li>
+              <li>BENGAL COLLEGE OF ENGINEERING AND TECHNOLOGY
+                BIDHANNAGAR, DURGAPUR-713212
+                PASCHIM BARDHAMAN- WEST BENGAL , INDIA
+                </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          &copy; 2024 Aquaveda.com | All Rights Reserved
+        </div>
+      </footer>
+    
+      <script>
+        // JavaScript for Scroll Animation
+        const articles = document.querySelectorAll('.content-article');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once animation is triggered
+            }
+          });
+        }, {
+          threshold: 0.2 // Trigger animation when 20% of the element is visible
+        });
+    
+        articles.forEach(article => {
+          observer.observe(article);
+        });
+      </script>
+    </body>
+    </html>

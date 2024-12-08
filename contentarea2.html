@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVeda - Articles</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #7291af;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-left: 270px; /* Offset to accommodate sidebar */
+      padding: 20px;
+      width: calc(100% - 270px); /* Full width minus sidebar */
+      background-color: #f4f4f4;
+      min-height: 100vh;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Article styling */
+    .content-article {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start with a downward offset */
+      transition: all 0.8s ease-out; /* Smooth animation */
+    }
+
+    .content-article.show {
+      opacity: 1; /* Become visible */
+      transform: translateY(0); /* Move to original position */
+    }
+
+    .content-article img {
+      float: left;
+      margin-right: 20px;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50px); /* Start with a leftward offset */
+      transition: all 0.1s ease-out 0s; /* Delay image animation */
+    }
+
+    .content-article.show img {
+      opacity: 1; /* Become visible */
+      transform: translateX(0); /* Move to original position */
+    }
+
+    .content-article h2 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .content-article p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .clear {
+      clear: both; /* Ensures proper flow of content after floated elements */
+    }
+  </style>
+  <link rel="stylesheet" href="contentarea1.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="img8.png" height="50px" width="200px">
+    <a href="contentarea1.html">Water Management</a>
+    <a href="contentarea2.html">Saving Techniques</a>
+    <a href="contentarea3.html">Water in Agriculture</a>
+    <a href="contentarea4.html">Water in Industry</a>
+    <a href="contentarea5.html">Awareness Campaigns</a>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <h1>Water Conservation Articles</h1>
+    <!-- Article 2 -->
+    <div id="techniques" class="content-article">
+        <img src="img2.jpg" alt="Water Saving Techniques">
+        <h2>Saving Techniques</h2>
+        <p>
+            <h4>Water Saving Techniques</h4>
+            <p>Water conservation is essential for ensuring sustainable access to clean water for all. Below are some key water-saving techniques that individuals, businesses, and industries can adopt to reduce water wastage:</p>
+            <h4>1. Rainwater Harvesting</h4>
+            <p>What it is: Collecting rainwater during rainfall and storing it for later use.</p>
+            <h4>Benefits:</h4>
+            <p>Reduces reliance on local water supply.</p>
+            <p>Can be used for irrigation, cleaning, or even drinking (with proper filtration).</p>
+            <h4>How to implement:</h4><p> Install rainwater collection systems like gutters, downspouts, and storage tanks on rooftops.</p>
+            <h4>2. Drip Irrigation</h4>
+            <p>What it is: A highly efficient irrigation method that delivers water directly to the roots of plants in small, steady amounts.</p>
+            <h4>Benefits:</h4>
+            <p>Reduces water loss due to evaporation and runoff.</p>
+            <p>Encourages healthy plant growth by providing targeted watering.</p>
+            <h4>How to implement:</h4><p> Install drip irrigation tubing around plants or garden beds to deliver water directly where it’s needed.</p>
+            <h4>3. Smart Watering Systems</h4>
+            <p>What it is: Automated irrigation systems that adjust water use based on weather conditions, soil moisture levels, and plant needs.</p>
+            <h4>Benefits:</h4>
+            <p>Prevents overwatering.</p>
+            <p>Saves time and effort while optimizing water use.</p>
+            <h4>How to implement:</h4><p> Install a smart irrigation controller that adjusts watering schedules based on real-time weather data or soil moisture sensors.</p>
+            <h4>4. Greywater Recycling</h4>
+            <p>What it is: Reusing water from baths, showers, sinks, and washing machines for purposes like irrigation or toilet flushing.</p>
+            <h4>Benefits:</h4>
+            <p>Reduces fresh water consumption.</p>
+            <p>Utilizes water that would otherwise go to waste.</p>
+            <h4>How to implement:</h4><p> Set up a greywater recycling system to divert water from household drains to irrigation systems or toilets.</p>
+            <h4>5. Low-Flow Fixtures</h4>
+            <p>What it is: Installing water-efficient appliances like showerheads, faucets, and toilets that use less water.</p>
+            <h4>Benefits:</h4>
+            <p>Significantly reduces water consumption in daily activities.
+            Saves money on water bills.</p>
+            <h4>How to implement:</h4><p> Replace old showerheads, faucets, and toilets with low-flow alternatives, which use up to 50% less water.</p>
+            <h4>6. Water-Efficient Landscaping (Xeriscaping)</h4>
+            <p>What it is: A landscaping technique that reduces or eliminates the need for irrigation by using drought-resistant plants, mulch, and efficient irrigation techniques.</p>
+            <h4>Benefits:</h4>
+            <p>Reduces water usage in gardens and lawns.</p>
+            <p>Minimizes the need for frequent watering and maintenance.</p>
+            <h4>How to implement:</h4><p> Choose native and drought-tolerant plants that require less water and install drip irrigation to reduce wastage.</p>
+            <h4>7. Fixing Leaks Promptly</h4>
+            <p>What it is: Repairing leaky faucets, pipes, or appliances promptly to prevent water wastage.</p>
+            <h4>Benefits:</h4>
+            <p>Stops water from being wasted.</p>
+            <p>Saves money on water bills.</p>
+            <h4>How to implement:</h4><p> Regularly check plumbing fixtures and appliances for leaks and repair them immediately.</p>
+            <h4>8. Use of Water-Efficient Appliances</h4>
+            <p>What it is: Using appliances like washing machines, dishwashers, and water heaters that are designed to consume less water.</p>
+            <h4>Benefits:</h4>
+            <p>Reduces water consumption and energy use.</p>
+            <p>Helps save money in the long run.</p>
+            <h4>How to implement:</h4><p> Upgrade to Energy Star-rated appliances that are optimized for water and energy efficiency.</p>
+            
+        </p>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We are committed to providing innovative solutions for water management and conservation. Join us in making a difference!</p>
+          </div>
+    
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Email: info@aquaveda.com</li>
+              <li>Phone: +91 8540918939</li>
+              <li>BENGAL COLLEGE OF ENGINEERING AND TECHNOLOGY
+                BIDHANNAGAR, DURGAPUR-713212
+                PASCHIM BARDHAMAN- WEST BENGAL , INDIA
+                </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          &copy; 2024 Aquaveda.com | All Rights Reserved
+        </div>
+      </footer>
+    
+      <script>
+        // JavaScript for Scroll Animation
+        const articles = document.querySelectorAll('.content-article');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once animation is triggered
+            }
+          });
+        }, {
+          threshold: 0.2 // Trigger animation when 20% of the element is visible
+        });
+    
+        articles.forEach(article => {
+          observer.observe(article);
+        });
+      </script>
+    </body>
+    </html>
+    
